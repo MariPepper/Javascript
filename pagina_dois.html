@@ -15,7 +15,7 @@
         <h1>Formulário de Entrega</h1>
         <form action="pagina_tres.html" method="get/post" enctype="multipart/form-data" onsubmit="return validarEmail()">
             <div class="coluna">
-                <p><input type="email" name="email" id="email" placeholder="Email:"></p>
+                <p><input type="email" name="email" id="email" placeholder="Email:" oninput="guardarEmail()"></p>
                 <p><input type="password" name="pwd" id="pwd" placeholder="Password:" oninput="verificar()"></p>
                 <p><input type="password" name="confirmar" id="confirmar" placeholder="Confirmar:"
                         oninput="verificar()"></p>

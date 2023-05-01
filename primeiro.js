@@ -135,5 +135,5 @@ function mostrarInfo2() {
         "Assunto: " + assunto + "\n" +
         "Mensagem: " + mensagem + "\n" +
         "Deseja receber a nossa Newsletter? " + newsletter;
-    exemplo.value = informacao;
+    t3.value = informacao;
 }

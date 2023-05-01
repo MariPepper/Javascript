@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="propriedades.css" type="text/css" />
+    <script src="primeiro.js"></script>   
+    <title>Javascript - Formulário</title>
+</head>
+
+<body onload="janela(); mostrarInfo();" onresize="janela()">
+    <div id="formulario">
+        <h1>Formulário de Entrega</h1>
+        <form action="pagina_tres.html" method="get/post" enctype="multipart/form-data" onsubmit="return validarEmail()">
+            <div class="coluna">
+                <p><input type="email" name="email" id="email" placeholder="Email:" oninput="guardarEmail()"></p>
+                <p><input type="password" name="pwd" id="pwd" placeholder="Password:" oninput="verificar()"></p>
+                <p><input type="password" name="confirmar" id="confirmar" placeholder="Confirmar:"
+                        oninput="verificar()"></p>
+                <!--<p><textarea name="exemplo" rows="5" id="exemplo" maxlength="600"></textarea></p>-->
+                <div id="outputDiv"></div>
+                <p><input type="submit" class="botao" value="Enviar" onclick="copiarInfo();">
+                </p>
+            </div>
+        </form>
+        <div class="limpar"></div>
+    </div>
+    <p>&nbsp;</p>
+</body>
+
+</html>

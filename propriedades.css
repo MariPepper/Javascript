@@ -46,10 +46,20 @@ input {
     border-bottom: black 1px solid;
 }
 
-#m1 {
+#t1 {
     resize: none;
     width: 90%;
     height:60px;
+    margin: 5px 0px;
+    padding: 5px;
+    border: 0px;
+    border-bottom: black 1px solid;
+}
+
+#t3 {
+    resize: none;
+    width: 90%;
+    height:170px;
     margin: 5px 0px;
     padding: 5px;
     border: 0px;

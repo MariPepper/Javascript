@@ -43,6 +43,10 @@ function validarEmail() {
     return true;
 }
 
+function guardarEmail(){
+    localStorage.setItem("email", document.getElementById("email").value);
+}
+
 function checkBox() {
     var newsletter = document.getElementById('newsletter').checked ? "Sim" : "Não";
     localStorage.setItem("newsletter", newsletter);
@@ -97,6 +101,36 @@ function mostrarInfo() {
         "Género: " + genero + "\n" +
         "Região: " + regiao + "\n" +
         "Telefone: " + contato + "\n" +
+        "Ficheiro: " + arquivo + "\n" +
+        "Assunto: " + assunto + "\n" +
+        "Mensagem: " + mensagem + "\n" +
+        "Deseja receber a nossa Newsletter? " + newsletter;
+    exemplo.value = informacao;
+}
+
+function mostrarInfo2() {
+    var nome = localStorage.getItem("nome");
+    var morada = localStorage.getItem("morada");
+    var data = localStorage.getItem("data");
+    var genero = localStorage.getItem("genero");
+    var regiao = localStorage.getItem("regiao");
+    var contato = localStorage.getItem("contato");
+    var email = localStorage.getItem("email");
+    var arquivo = localStorage.getItem("arquivo");
+    var assunto = localStorage.getItem("assunto");
+    var mensagem = localStorage.getItem("mensagem");
+    var newsletter = localStorage.getItem("newsletter");
+    var nascimento = new Date(data).getFullYear();
+    var ano = new Date().getFullYear();
+    var idade = ano - nascimento;
+    var informacao =
+        "Nome: " + nome + "\n" +
+        "Morada: " + morada + "\n" +
+        "Data de Nascimento: " + idade + "\n" +
+        "Género: " + genero + "\n" +
+        "Região: " + regiao + "\n" +
+        "Telefone: " + contato + "\n" +
+        "Email: " + email + "\n" +
         "Ficheiro: " + arquivo + "\n" +
         "Assunto: " + assunto + "\n" +
         "Mensagem: " + mensagem + "\n" +
